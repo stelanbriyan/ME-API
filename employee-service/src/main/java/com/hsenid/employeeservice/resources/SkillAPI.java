@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-
+/**
+ * @author Stelan Briyan
+ */
 @RestController
 @RequestMapping("/skill/")
 public class SkillAPI {

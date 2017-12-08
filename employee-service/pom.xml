@@ -58,6 +58,12 @@
 			<scope>compile</scope>
 		</dependency>
 
+		<!--Spring security-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
 		<!--Spring data-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
