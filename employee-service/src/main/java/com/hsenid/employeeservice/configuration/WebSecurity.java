@@ -19,6 +19,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
                 .antMatchers("/").permitAll()
                 .antMatchers(HttpMethod.GET, "/findEmployeeBySkill/**").permitAll()
                 .antMatchers(HttpMethod.POST, "/findEmployeeSkill").permitAll()
+                .antMatchers(HttpMethod.GET, "/findEmployees").permitAll()
                 .antMatchers(HttpMethod.GET, "/skill/findSkill").permitAll()
                 .anyRequest().authenticated();
     }

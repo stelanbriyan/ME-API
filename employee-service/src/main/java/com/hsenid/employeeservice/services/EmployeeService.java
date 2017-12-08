@@ -53,4 +53,8 @@ public class EmployeeService {
     public List<Employee> findEmployeeBySkill(Skill skill) {
         return this.employeeRepository.findEmployeeBySkill(skill.getSkill());
     }
+
+    public List<Employee> findEmployees() {
+        return (List<Employee>) this.employeeRepository.findAll();
+    }
 }

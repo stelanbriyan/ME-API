@@ -18,6 +18,11 @@ public class EmployeeAPI {
     @Autowired
     private EmployeeService employeeService;
 
+    @GetMapping("findEmployees")
+    public List<Employee> findEmployees(){
+        return this.employeeService.findEmployees();
+    }
+
     @GetMapping("findEmployeeBySkill/{skill}")
     public List<Employee> findEmployeeBySkill(@PathVariable("skill") String skill) {
         this.employeeService.findEmpBySkill(skill);
