@@ -7,6 +7,11 @@ spring:
     password: admin
     driver-class-name: com.mysql.jdbc.Driver
 
+#spring:
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+
 # Discovery Server Access
 eureka:
   client:
