@@ -1,4 +1,4 @@
-package com.hsenid.empmanager.domain;
+package com.hsenid.employeeservice.domain;
 
 import javax.persistence.*;
 

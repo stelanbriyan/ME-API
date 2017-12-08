@@ -9,8 +9,8 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>empservice</module>
         <module>serviceregistry</module>
+        <module>employee-service</module>
     </modules>
 
     <parent>

@@ -1,7 +1,7 @@
-package com.hsenid.empmanager.services;
+package com.hsenid.employeeservice.services;
 
-import com.hsenid.empmanager.domain.Employee;
-import com.hsenid.empmanager.repository.EmployeeRepository;
+import com.hsenid.employeeservice.domain.Employee;
+import com.hsenid.employeeservice.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,7 +17,7 @@ public class EmployeeService {
     private SkillService skillService;
 
     public List<Employee> findEmployeeBySkill(String skill) {
-        List<Employee> all = (List<Employee>) this.employeeRepository.findAll();
+        List<Employee> employees = this.employeeRepository.findEmployeeBySkill(skill);
 
         return null;
     }

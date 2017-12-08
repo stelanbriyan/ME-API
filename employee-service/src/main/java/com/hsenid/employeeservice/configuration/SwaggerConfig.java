@@ -1,4 +1,4 @@
-package com.hsenid.empmanager.configuration;
+package com.hsenid.employeeservice.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,7 +21,7 @@ public class SwaggerConfig {
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.hsenid.empmanager"))
+                .apis(RequestHandlerSelectors.basePackage("com.hsenid.employeeservice"))
                 .paths(regex("/.*"))
                 .build()
                 .apiInfo(metaInfo());
@@ -29,8 +29,8 @@ public class SwaggerConfig {
 
     private ApiInfo metaInfo() {
         ApiInfo apiInfo = new ApiInfo(
-                "EMP Service - Swagger Rest API Documentation",
-                "Spring Boot - EMPService",
+                "Employee Service - Swagger Rest API Documentation",
+                "Spring Boot - Employee Management",
                 "1.0",
                 "Terms of Service",
                 new Contact("hSenid", "",

@@ -1,4 +1,4 @@
-package com.hsenid.empmanager.services;
+package com.hsenid.employeeservice.services;
 
 import org.springframework.stereotype.Service;
 

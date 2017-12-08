@@ -1,7 +1,7 @@
-package com.hsenid.empmanager.resources;
+package com.hsenid.employeeservice.resources;
 
-import com.hsenid.empmanager.domain.Employee;
-import com.hsenid.empmanager.services.EmployeeService;
+import com.hsenid.employeeservice.domain.Employee;
+import com.hsenid.employeeservice.services.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,7 +14,7 @@ import java.util.List;
  * @author Stelan Briyan
  */
 @RestController
-@RequestMapping(value = "/emp/")
+@RequestMapping(value = "/")
 public class EmployeeAPI {
 
     @Autowired
